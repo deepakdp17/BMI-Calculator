@@ -111,3 +111,12 @@ input,button{
   font-size: 20px;
   font-weight: 700;
 }
+
+.btn:hover{
+  background:#1479ff;
+  color: #f3f8ff;
+}
+
+#calculate:active,#result:active,#reset:active{
+  height: 50px;
+}
