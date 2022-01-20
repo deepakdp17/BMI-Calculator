@@ -21,7 +21,7 @@ btn.addEventListener("click", ()=>{
 
 //BMI calculations
 
-let result;
+var result;
 function calculateBMI(){
     let weight=document.getElementById("inp_weight").value;
     let height=document.getElementById("inp_height").value; 
