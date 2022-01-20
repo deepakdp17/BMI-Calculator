@@ -1,0 +1,113 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Exo', sans-serif;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f3f8ff;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+}
+
+.box{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.change{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.toggle_btn{
+  width: 60px;
+  height: 31px;
+  margin: auto;
+  background-color: lightgray;
+  border-radius: 20px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.inner_circle{
+  width: 25px;
+  height: 25px;
+  background-color: rgb(156, 152, 152);
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  transition: 0.5s;
+}
+
+.mode_status{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.move{
+  left: 31px;
+  background-color: black;
+}
+
+.dark{
+  color: #fff;
+}
+
+.color{
+  background-color: #fff;
+}
+
+#main {
+  margin: auto;
+  width: 55%;
+  height: 77vh;
+  padding: 30px;
+  background: rgb(217, 217, 226);
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px 0;
+  overflow: hidden;
+  box-shadow: 2px 2px 4px #00000010, -2px -2px 4px #00000010;
+}
+
+#calculator,#title{
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  margin: 20px 0;
+  color: #1479ff;
+}
+
+#bmi-value,#status{
+  font-size: 20px;
+  color: #1479ff;
+  font-weight: 700;
+  margin: auto;
+  align-content: center;
+}
+
+input,button{
+  height: 45px;
+  width: 320px;
+  margin: 10px;
+  padding: 0px 15px;
+  border: 2px solid #1479ff;
+  outline: none;
+  background: #f3f8ff;
+  color: #1479ff;
+  font-size: 20px;
+  font-weight: 700;
+}
