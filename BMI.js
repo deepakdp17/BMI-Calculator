@@ -27,10 +27,10 @@ function calculateBMI(){
     let height=document.getElementById("inp_height").value; 
     
     if (weight== "") {
-        alert("Enter Weight");
+        alertify.alert("Alert","Enter value for Weight");
     }
     else if (height == "") {
-        alert("Enter Height");
+        alertify.alert("Alert","Enter value for Height");
     }
     else{
         //height entered in centimeters.dividing by 100 to convert it into meters
@@ -41,7 +41,7 @@ function calculateBMI(){
 }
 function displayResult(){
     if(result == undefined){
-        alert("Enter values");
+        alertify.alert("Error","Enter Input values");
         return;
     }
     let msg1=document.getElementById("bmi-value");
@@ -49,7 +49,7 @@ function displayResult(){
     msg1.innerText=`Your BMI Value: ${result}`;
     if(result<18.5){
         msg2.innerText="Underweight";
-    }else if(result<=25.0){
+    }else if(result<25.0){
         msg2.innerText="Normal";
     }else{
         msg2.innerText="Overweight";
