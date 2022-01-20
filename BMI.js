@@ -21,10 +21,10 @@ btn.addEventListener("click", ()=>{
 
 //BMI calculations
 
-var result;
+let result;
 function calculateBMI(){
-    var weight=document.getElementById("inp_weight").value;
-    var height=document.getElementById("inp_height").value; 
+    let weight=document.getElementById("inp_weight").value;
+    let height=document.getElementById("inp_height").value; 
     
     if (weight== "") {
         alert("Enter Weight");
@@ -44,12 +44,12 @@ function displayResult(){
         alert("Enter values");
         return;
     }
-    var msg1=document.getElementById("bmi-value");
-    var msg2=document.getElementById("status");
+    let msg1=document.getElementById("bmi-value");
+    let msg2=document.getElementById("status");
     msg1.innerText=`Your BMI Value: ${result}`;
     if(result<18.5){
         msg2.innerText="Underweight";
-    }else if(result<25.0){
+    }else if(result<=25.0){
         msg2.innerText="Normal";
     }else{
         msg2.innerText="Overweight";
