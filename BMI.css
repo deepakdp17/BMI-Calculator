@@ -132,5 +132,5 @@ input,button{
 #calculate:active,#result:active,#reset:active{
   height: 40px;
   width: 320px;
-  margin-top: 12.5px;
+  margin: 12.5px 10px;
 }
