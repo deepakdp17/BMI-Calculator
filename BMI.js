@@ -6,6 +6,7 @@ const btn = document.querySelector(".toggle_btn");
 const innerCircle = document.querySelector(".inner_circle");
 const toogleBtn = document.querySelector(".toggle_btn");
 let text = document.querySelector(".mode_status");
+let d=document;
 
 btn.addEventListener("click", ()=>{
     innerCircle.classList.toggle("move");
@@ -23,8 +24,8 @@ btn.addEventListener("click", ()=>{
 
 var result;
 function calculateBMI(){
-    let weight=document.getElementById("inp_weight").value;
-    let height=document.getElementById("inp_height").value; 
+    let weight=d.getElementById("inp_weight").value;
+    let height=d.getElementById("inp_height").value; 
     
     if (weight== "") {
         alertify.alert("Alert","Enter value for Weight");
@@ -44,8 +45,8 @@ function displayResult(){
         alertify.alert("Error","Enter Input values");
         return;
     }
-    let msg1=document.getElementById("bmi-value");
-    let msg2=document.getElementById("status");
+    let msg1=d.getElementById("bmi-value");
+    let msg2=d.getElementById("status");
     msg1.innerText=`Your BMI Value: ${result}`;
     if(result<18.5){
         msg2.innerText="Underweight";
@@ -56,5 +57,8 @@ function displayResult(){
     }
 }
 function refresh(){
-    location.reload();
+    d.getElementById("inp_weight").value="";
+    d.getElementById("inp_height").value="";
+    d.getElementById("bmi-value").innerText="";
+    d.getElementById("status").innerText=""; 
 }
