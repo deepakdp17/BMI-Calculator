@@ -27,7 +27,10 @@ function calculateBMI(){
     let weight=d.getElementById("inp_weight").value;
     let height=d.getElementById("inp_height").value; 
     
-    if (weight== "") {
+    if(weight == "" && height == ""){
+        alertify.alert("Alert","Enter value for Weight and Height");
+    }
+    else if (weight == "") {
         alertify.alert("Alert","Enter value for Weight");
     }
     else if (height == "") {
