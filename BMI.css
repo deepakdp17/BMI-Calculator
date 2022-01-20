@@ -111,18 +111,15 @@ input,button{
   font-size: 20px;
   font-weight: 700;
 }
-
 #calculate:hover{
   background:#1479ff;
   color: #f3f8ff;
 }
-
 #result:hover{
   background:#4beb60;
   color: #f3f8ff;
   border: 2px solid #4beb60;
 }
-
 #reset:hover{
   background:#eb3333;
   color: #f3f8ff;
