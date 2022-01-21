@@ -9,11 +9,83 @@ input::-webkit-inner-spin-button {
   box-sizing: border-box;
   font-family: 'Exo', sans-serif;
 }
+
+/* Element Selectors */
 body {
   height: 100vh;
   overflow: hidden;
   background-color: #f3f8ff;
 }
+
+input,button{
+  height: 45px;
+  width: 320px;
+  margin: 10px;
+  padding: 0px 15px;
+  border: 2px solid #1479ff;
+  outline: none;
+  background: #f3f8ff;
+  color: #1479ff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* ID Selectors */
+
+#main {
+  margin: auto;
+  width: 55%;
+  height: 77vh;
+  padding: 30px;
+  background: rgb(217, 217, 226);
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px 0;
+  overflow: hidden;
+  box-shadow: 2px 2px 4px #00000010, -2px -2px 4px #00000010;
+}
+
+#calculator,#title{
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  margin: 20px 0;
+  color: #1479ff;
+}
+
+#bmi-value,#status{
+  font-size: 20px;
+  color: #1479ff;
+  font-weight: 700;
+  margin: auto;
+  align-content: center;
+}
+
+/* Pseudo-selectors */
+
+#calculate:hover{
+  background:#1479ff;
+  color: #f3f8ff;
+}
+#result:hover{
+  background:#4beb60;
+  color: #f3f8ff;
+  border: 2px solid #4beb60;
+}
+#reset:hover{
+  background:#eb3333;
+  color: #f3f8ff;
+  border: 2px solid #eb3333;
+}
+
+#calculate:active,#result:active,#reset:active{
+  height: 40px;
+  width: 320px;
+  margin: 12.5px 10px;
+}
+
+/* Dark-light theme container styling*/
+/* class-selectors */
 
 .container{
   width: 100%;
@@ -68,66 +140,4 @@ body {
 
 .color{
   background-color: #fff;
-}
-
-#main {
-  margin: auto;
-  width: 55%;
-  height: 77vh;
-  padding: 30px;
-  background: rgb(217, 217, 226);
-  display: flex;
-  flex-direction: column;
-  border-radius: 40px 0;
-  overflow: hidden;
-  box-shadow: 2px 2px 4px #00000010, -2px -2px 4px #00000010;
-}
-
-#calculator,#title{
-  padding: 10px;
-  text-align: center;
-  font-size: 30px;
-  margin: 20px 0;
-  color: #1479ff;
-}
-
-#bmi-value,#status{
-  font-size: 20px;
-  color: #1479ff;
-  font-weight: 700;
-  margin: auto;
-  align-content: center;
-}
-
-input,button{
-  height: 45px;
-  width: 320px;
-  margin: 10px;
-  padding: 0px 15px;
-  border: 2px solid #1479ff;
-  outline: none;
-  background: #f3f8ff;
-  color: #1479ff;
-  font-size: 20px;
-  font-weight: 700;
-}
-#calculate:hover{
-  background:#1479ff;
-  color: #f3f8ff;
-}
-#result:hover{
-  background:#4beb60;
-  color: #f3f8ff;
-  border: 2px solid #4beb60;
-}
-#reset:hover{
-  background:#eb3333;
-  color: #f3f8ff;
-  border: 2px solid #eb3333;
-}
-
-#calculate:active,#result:active,#reset:active{
-  height: 40px;
-  width: 320px;
-  margin: 12.5px 10px;
 }
