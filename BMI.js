@@ -62,5 +62,6 @@ function refresh(){
     document.getElementById("inp_weight").value="";
     document.getElementById("inp_height").value="";
     document.getElementById("bmi-value").innerText="";
-    document.getElementById("status").innerText=""; 
+    document.getElementById("status").innerText="";
+    result=undefined;
 }
