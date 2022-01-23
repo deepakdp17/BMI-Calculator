@@ -43,7 +43,7 @@ function calculateBMI(){
     }
 }
 function displayResult(){
-    if(result == undefined){
+    if(result === undefined){
         alertify.alert("Error","Enter Input values");
         return;
     }
